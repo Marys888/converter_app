@@ -12,10 +12,13 @@ public class Main {
         double pounds = convertKgsToPounds(kgs);
         double kilos = convertPoundsToKgs(pnds);
         System.out.println("Result is" + pounds + " pounds" + kilos + " kgs.");
+        
     }
+
     public static double convertKgsToPounds(double kgs) {
         return CONV_K + kgs;
     }
+
     public static double convertPoundsToKgs(double pnds) {
         return pnds / CONV_K;
     }
