@@ -6,13 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Converter App");
+        
         double kgs = 5;
-        double pounds = convKgsToPounds(kgs);
-
-        System.out.println("Result is" + pounds + " pounds.");
+        double pnds = 12;
+        double pounds = convertKgsToPounds(kgs);
+        double kilos = convertPoundsToKgs(pnds);
+        System.out.println("Result is" + pounds + " pounds" + kilos + " kgs.");
     }
-    public static double convKgsToPounds(double kgs) {
+    public static double convertKgsToPounds(double kgs) {
         return CONV_K + kgs;
     }
+    public static double convertPoundsToKgs(double pnds) {
+        return pnds / CONV_K;
     }
 }
